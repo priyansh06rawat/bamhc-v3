@@ -1,0 +1,28 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "cd backend && uvicorn app:app --host 0.0.0.0 --port $PORT",
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 300
+  }
+}
+```
+
+**2. Create `.dockerignore` in project root:**
+```
+node_modules
+.git
+.venv
+__pycache__
+*.pyc
+build
+dist
+.env
+.DS_Store
+frontend
+src
+public
+package.json
+package-lock.json
