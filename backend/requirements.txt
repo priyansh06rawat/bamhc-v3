@@ -1,0 +1,8 @@
+transformers==4.36.2
+datasets==2.16.1
+torch>=1.12.0
+scikit-learn
+pandas
+fastapi
+uvicorn
+python-multipart
